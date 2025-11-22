@@ -1,4 +1,4 @@
-class topic:
+class Topic:
     def __init__(self, name, duration, priority, category, past_scores=None, predicted_difficulty=None):
         self.name = name   #topic title
         self.duration = duration  #estimated study time in minutes
