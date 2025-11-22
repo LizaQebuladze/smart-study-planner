@@ -25,9 +25,12 @@ def main():
             category = input("Category: ").strip()
             past_scores = input("Past scores (comma-seperated, leave blank if none): ")
             if past_scores:
-                past_scores = [int(s.strip() for s in past_scores.split(","))]
+                past_scores = [int(s.strip()) for s in past_scores.split(",")]
             else:
                 past_scores = []
+            
+            topic = Topic(name, duration, priority, category, past_scores, predicted_difficulty=None)
+            plan.add_topic(topic)
         
         elif choice == "2":
             name = input("Enter topic name to remove: ").strip()
