@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Graphs",
+    "duration": 60,
+    "priority": 8,
+    "category": "Math",
+    "past_scores": [80, 90],
+    "predicted_difficulty": 5.0
+  },
+  {
+    "name": "Python OOP",
+    "duration": 45,
+    "priority": 9,
+    "category": "Programming",
+    "past_scores": [85, 95],
+    "predicted_difficulty": 4.0
+  },
+  {
+    "name": "Dynamic Programming",
+    "duration": 90,
+    "priority": 10,
+    "category": "Algorithms",
+    "past_scores": [70, 75],
+    "predicted_difficulty": 6.5
+  }
+]
