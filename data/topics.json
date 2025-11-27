@@ -1,26 +1,438 @@
 [
   {
+    "name": "Dynamic Programming",
+    "duration": 90,
+    "priority": 2,
+    "category": "Algorithms",
+    "past_scores": [
+      70,
+      75
+    ],
+    "predicted_difficulty": 8.6
+  },
+  {
+    "name": "Discrete Structures",
+    "duration": 120,
+    "priority": 7,
+    "category": "Math",
+    "past_scores": [
+      91,
+      93,
+      87
+    ],
+    "predicted_difficulty": 4.5
+  },
+  {
     "name": "Graphs",
     "duration": 60,
-    "priority": 8,
+    "priority": 2,
     "category": "Math",
-    "past_scores": [80, 90],
-    "predicted_difficulty": 5.0
+    "past_scores": [
+      80,
+      90
+    ],
+    "predicted_difficulty": 8.9
+  },
+  {
+    "name": "Fundamentals Of Programming",
+    "duration": 120,
+    "priority": 4,
+    "category": "Programming",
+    "past_scores": [
+      95,
+      97,
+      100
+    ],
+    "predicted_difficulty": 6.7
   },
   {
     "name": "Python OOP",
     "duration": 45,
-    "priority": 9,
+    "priority": 2,
     "category": "Programming",
-    "past_scores": [85, 95],
-    "predicted_difficulty": 4.0
+    "past_scores": [
+      85,
+      95
+    ],
+    "predicted_difficulty": 8.50
   },
   {
-    "name": "Dynamic Programming",
+    "name": "Introduction To Informatics",
     "duration": 90,
-    "priority": 10,
+    "priority": 3,
+    "category": "Programming",
+    "past_scores": [
+      92,
+      97,
+      100
+    ],
+    "predicted_difficulty": 6.30
+  },
+  {
+    "name": "Data Bases 1",
+    "duration": 180,
+    "priority": 1,
+    "category": "Programming",
+    "past_scores": [
+      87,
+      90,
+      92
+    ],
+    "predicted_difficulty": 10.0
+  },
+  {
+    "name": "Introduction To Ocaml",
+    "duration": 150,
+    "priority": 2,
+    "category": "Programming",
+    "past_scores": [
+      91,
+      95
+    ],
+    "predicted_difficulty": 9.5
+  },
+  {
+    "name": "Calculus",
+    "duration": 180,
+    "priority": 7,
+    "category": "Math",
+    "past_scores": [
+      91,
+      93
+    ],
+    "predicted_difficulty": 7.5
+  },
+  {
+    "name": "Linear Algebra",
+    "duration": 180,
+    "priority": 6,
+    "category": "Math",
+    "past_scores": [
+      91,
+      95
+    ],
+    "predicted_difficulty": 7.8
+
+  },
+    {
+    "name": "Operating Systems",
+    "duration": 120,
+    "priority": 3,
+    "category": "Systems",
+    "past_scores": [85, 88, 90],
+    "predicted_difficulty": 8.2
+  },
+  {
+    "name": "Computer Networks",
+    "duration": 150,
+    "priority": 4,
+    "category": "Systems",
+    "past_scores": [78, 82],
+    "predicted_difficulty": 8.0
+  },
+  {
+    "name": "SQL Advanced Queries",
+    "duration": 75,
+    "priority": 3,
+    "category": "Databases",
+    "past_scores": [90, 92],
+    "predicted_difficulty": 7.1
+  },
+  {
+    "name": "Machine Learning Basics",
+    "duration": 120,
+    "priority": 2,
+    "category": "AI",
+    "past_scores": [75, 80],
+    "predicted_difficulty": 9.2
+  },
+  {
+    "name": "Probability & Statistics",
+    "duration": 140,
+    "priority": 5,
+    "category": "Math",
+    "past_scores": [88, 85],
+    "predicted_difficulty": 7.4
+  },
+  {
+    "name": "Software Engineering",
+    "duration": 90,
+    "priority": 4,
+    "category": "Programming",
+    "past_scores": [92, 90, 85],
+    "predicted_difficulty": 6.5
+  },
+  {
+    "name": "Data Structures",
+    "duration": 150,
+    "priority": 1,
+    "category": "Algorithms",
+    "past_scores": [89, 91],
+    "predicted_difficulty": 9.8
+  },
+  {
+    "name": "Compiler Design",
+    "duration": 120,
+    "priority": 3,
+    "category": "Systems",
+    "past_scores": [70, 75],
+    "predicted_difficulty": 9.0
+  },
+  {
+    "name": "Cryptography",
+    "duration": 80,
+    "priority": 6,
+    "category": "Security",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.9
+  },
+  {
+    "name": "Discrete Probability",
+    "duration": 100,
+    "priority": 7,
+    "category": "Math",
+    "past_scores": [90, 93],
+    "predicted_difficulty": 6.9
+  },
+    {
+    "name": "Artificial Intelligence",
+    "duration": 120,
+    "priority": 2,
+    "category": "AI",
+    "past_scores": [80, 85],
+    "predicted_difficulty": 8.7
+  },
+  {
+    "name": "Reinforcement Learning",
+    "duration": 150,
+    "priority": 1,
+    "category": "AI",
+    "past_scores": [70, 75],
+    "predicted_difficulty": 9.5
+  },
+  {
+    "name": "Natural Language Processing",
+    "duration": 130,
+    "priority": 3,
+    "category": "AI",
+    "past_scores": [82, 88],
+    "predicted_difficulty": 8.3
+  },
+  {
+    "name": "Computer Vision",
+    "duration": 120,
+    "priority": 3,
+    "category": "AI",
+    "past_scores": [78, 85],
+    "predicted_difficulty": 8.2
+  },
+  {
+    "name": "Big Data Analytics",
+    "duration": 140,
+    "priority": 4,
+    "category": "Data Science",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.6
+  },
+  {
+    "name": "Data Mining",
+    "duration": 130,
+    "priority": 4,
+    "category": "Data Science",
+    "past_scores": [80, 82],
+    "predicted_difficulty": 7.8
+  },
+  {
+    "name": "Deep Learning",
+    "duration": 150,
+    "priority": 2,
+    "category": "AI",
+    "past_scores": [75, 80],
+    "predicted_difficulty": 9.0
+  },
+  {
+    "name": "Linear Regression",
+    "duration": 60,
+    "priority": 5,
+    "category": "Data Science",
+    "past_scores": [90, 92],
+    "predicted_difficulty": 6.0
+  },
+  {
+    "name": "Logistic Regression",
+    "duration": 70,
+    "priority": 5,
+    "category": "Data Science",
+    "past_scores": [88, 90],
+    "predicted_difficulty": 6.3
+  },
+  {
+    "name": "Decision Trees",
+    "duration": 80,
+    "priority": 4,
+    "category": "Data Science",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.2
+  },
+  {
+    "name": "Random Forests",
+    "duration": 90,
+    "priority": 3,
+    "category": "Data Science",
+    "past_scores": [80, 82],
+    "predicted_difficulty": 7.8
+  },
+  {
+    "name": "Gradient Boosting",
+    "duration": 100,
+    "priority": 3,
+    "category": "Data Science",
+    "past_scores": [78, 81],
+    "predicted_difficulty": 8.0
+  },
+  {
+    "name": "Support Vector Machines",
+    "duration": 90,
+    "priority": 4,
+    "category": "Data Science",
+    "past_scores": [82, 85],
+    "predicted_difficulty": 7.9
+  },
+  {
+    "name": "Python Libraries for ML",
+    "duration": 60,
+    "priority": 5,
+    "category": "Programming",
+    "past_scores": [95, 97],
+    "predicted_difficulty": 6.0
+  },
+  {
+    "name": "Advanced Python",
+    "duration": 80,
+    "priority": 4,
+    "category": "Programming",
+    "past_scores": [90, 92],
+    "predicted_difficulty": 7.0
+  },
+  {
+    "name": "Java Basics",
+    "duration": 100,
+    "priority": 6,
+    "category": "Programming",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.5
+  },
+  {
+    "name": "C++ STL",
+    "duration": 90,
+    "priority": 5,
+    "category": "Programming",
+    "past_scores": [80, 82],
+    "predicted_difficulty": 8.0
+  },
+  {
+    "name": "Algorithms: Sorting",
+    "duration": 70,
+    "priority": 3,
+    "category": "Algorithms",
+    "past_scores": [88, 90],
+    "predicted_difficulty": 6.5
+  },
+  {
+    "name": "Algorithms: Searching",
+    "duration": 60,
+    "priority": 3,
+    "category": "Algorithms",
+    "past_scores": [90, 92],
+    "predicted_difficulty": 6.3
+  },
+  {
+    "name": "Greedy Algorithms",
+    "duration": 80,
+    "priority": 2,
+    "category": "Algorithms",
+    "past_scores": [78, 82],
+    "predicted_difficulty": 8.0
+  },
+  {
+    "name": "Divide and Conquer",
+    "duration": 90,
+    "priority": 2,
+    "category": "Algorithms",
+    "past_scores": [75, 80],
+    "predicted_difficulty": 8.5
+  },
+  {
+    "name": "Backtracking",
+    "duration": 100,
+    "priority": 2,
     "category": "Algorithms",
     "past_scores": [70, 75],
+    "predicted_difficulty": 9.0
+  },
+  {
+    "name": "Graph Algorithms",
+    "duration": 120,
+    "priority": 1,
+    "category": "Algorithms",
+    "past_scores": [80, 85],
+    "predicted_difficulty": 9.2
+  },
+  {
+    "name": "Network Security",
+    "duration": 100,
+    "priority": 5,
+    "category": "Security",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.5
+  },
+  {
+    "name": "Ethical Hacking",
+    "duration": 120,
+    "priority": 4,
+    "category": "Security",
+    "past_scores": [78, 82],
+    "predicted_difficulty": 8.0
+  },
+  {
+    "name": "Web Development Basics",
+    "duration": 90,
+    "priority": 6,
+    "category": "Programming",
+    "past_scores": [90, 92],
+    "predicted_difficulty": 6.5
+  },
+  {
+    "name": "Frontend Frameworks",
+    "duration": 80,
+    "priority": 6,
+    "category": "Programming",
+    "past_scores": [85, 87],
+    "predicted_difficulty": 7.0
+  },
+  {
+    "name": "Backend Development",
+    "duration": 100,
+    "priority": 5,
+    "category": "Programming",
+    "past_scores": [80, 82],
+    "predicted_difficulty": 7.5
+  },
+  {
+    "name": "APIs and REST",
+    "duration": 70,
+    "priority": 5,
+    "category": "Programming",
+    "past_scores": [88, 90],
+    "predicted_difficulty": 6.8
+  },
+  {
+    "name": "Unit Testing",
+    "duration": 60,
+    "priority": 4,
+    "category": "Programming",
+    "past_scores": [90, 92],
     "predicted_difficulty": 6.5
   }
+
 ]

@@ -1,53 +1,35 @@
 from sklearn.ensemble import RandomForestRegressor
+import os
+import joblib
 import numpy as np
+from models.topic import Topic
 class DifficultyModel:
     def __init__(self):
-        self.model = RandomForestRegressor(n_estimators=50, random_state=42)
-        self.trained = False
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.model_path = os.path.join(BASE_DIR, "saved_model", "difficulty_model.pkl")
 
-    def _prepare_features(self, topic):
-        """
-        convert a topic object into a feature vector:
-        - average past score
-        - duration in minutes
-        - priority (1-10)
-        """
+        if os.path.exists(self.model_path):
+            self.model = joblib.load(self.model_path)
+            print(f"Loaded model from {self.model_path}")
+        else:
+            self.model = None
+            print("No saved model found. Please train the model first.")
 
-        avg_score = topic.average_score()
-        duration = topic.duration
-        priority = topic.priority
+    def predict(self, topic: Topic):
+        if not self.model:
+            print("No trained model available. Cannot predict difficulty.")
+            return None
         
-        return np.array([[avg_score, duration, priority]])
-    
-    def train (self, topics):
-        #train model on the list of topics known predicted_difficulty
-
-        X = []
-        y = []
-        for topic in topics:
-            if topic.predicted_difficulty is not None:
-                X.append([topic.average_score(), topic.duration, topic.priority])
-                y.append(topic.predicted_difficulty)
-
-            if X and y:
-                self.model.fit(X,y)
-                self.trained = True
-                print(f"Difficulty model trained on {len(X)} topics. ")
-            else:
-                print(f"No topics with known difficulty to train model. ")
-
-    def predict(self, topic):
-        # predict difficulty for a single topic and return float
-
-        features = self._prepare_features(topic)
-        if self.trained:
-            predicted = self.model.predict(features)[0]
-        else :
-            predicted = max(0, min(10, 10-topic.average_score() / 10 + topic.duration /60))
+        features = np.array([[topic.average_score(), topic.duration, topic.priority]])
+        predicted = float(self.model.predict(features)[0])
         return predicted
-    
+
     def update_topics(self, topics):
         # update predicted_difficulty for all topics
+        if not self.model:
+            print("No trained model available. Cannot update topics.")
+            return
+
         for topic in topics:
             topic.predicted_difficulty = self.predict(topic)
 

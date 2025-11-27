@@ -2,7 +2,7 @@ class Topic:
     def __init__(self, name, duration, priority, category, past_scores=None, predicted_difficulty=None):
         self.name = name   #topic title
         self.duration = duration  #estimated study time in minutes
-        self.priority = priority   #1-10, 1 the least important and 10 the most important
+        self.priority = priority   #1-10, 1 the most important and 10 the least important
         self.category = category
         self.past_scores = past_scores if past_scores is not None else [] #each score between 0-100
         self.predicted_difficulty = predicted_difficulty
@@ -14,7 +14,11 @@ class Topic:
             return sum(self.past_scores) / len(self.past_scores)
 
     def __str__(self):
-        return f"{self.name} ({self.category}) - Duration: {self.duration} min, Priority: {self.priority}, Average score: {self.average_score():.2f}"
+        return (
+        f"{self.name} ({self.category}) - Duration: {self.duration} min, "
+        f"Priority: {self.priority}, Average score: {self.average_score():.2f}, "
+        f"Predicted difficulty: {self.predicted_difficulty if self.predicted_difficulty is not None else 'N/A'}"
+        )
 
     def to_dict(self):
         # converting the topic object to a dictionay for JSON saving

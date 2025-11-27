@@ -1,5 +1,6 @@
 import json
-from topic import Topic
+from .topic import Topic
+from utils.file_utils import get_new_topics_file
 
 class StudyPlan:
     def __init__(self, file_path = "data/topics.json"):
@@ -31,7 +32,6 @@ class StudyPlan:
             
     def save(self):
         #save the list of topics to JSON file
-
         try:
             with open(self.file_path, "w") as f:
                 json.dump([t.to_dict() for t in self.topics], f, indent=2)
@@ -52,7 +52,7 @@ class StudyPlan:
             print(f"Error loading study plan: {e}")
 
     def sort_by(self, attribute):
-        # Sort topics by a given attribute (priority, duration, predicted_difficulty, name, etc)
+        # Sort topics by a given attribute (priority, duration, predicted_difficulty, name)
         if not self.topics:
             print("No topics to sort. ")
             return
@@ -61,4 +61,4 @@ class StudyPlan:
             print(f"Topics sorted by {attribute}")
         except AttributeError:
             print(f"Invalid attribute '{attribute}' for sorting. ")
-        
+        self.list_topics()
