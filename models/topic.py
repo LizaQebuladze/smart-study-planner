@@ -17,7 +17,7 @@ class Topic:
         return (
         f"{self.name} ({self.category}) - Duration: {self.duration} min, "
         f"Priority: {self.priority}, Average score: {self.average_score():.2f}, "
-        f"Predicted difficulty: {self.predicted_difficulty if self.predicted_difficulty is not None else 'N/A'}"
+        f"Predicted difficulty: {self.predicted_difficulty:.2f}"
         )
 
     def to_dict(self):

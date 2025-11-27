@@ -51,14 +51,55 @@ class StudyPlan:
         except Exception as e:
             print(f"Error loading study plan: {e}")
 
+
     def sort_by(self, attribute):
-        # Sort topics by a given attribute (priority, duration, predicted_difficulty, name)
         if not self.topics:
-            print("No topics to sort. ")
+            print("No topics to sort.")
             return
+
+        print("Choose sorting mode:")
+        print("1. Ascending")
+        print("2. Descending")
+        print("3. Middle")
+
+        mode = input("Enter choice (1/2/3): ").strip()
+
         try:
-            self.topics.sort(key=lambda t: getattr(t, attribute), reverse=True)
-            print(f"Topics sorted by {attribute}")
+            sorted_topics = sorted(self.topics, key=lambda t: getattr(t, attribute))
         except AttributeError:
-            print(f"Invalid attribute '{attribute}' for sorting. ")
-        self.list_topics()
+            print(f"Invalid attribute: {attribute}")
+            return
+
+        if mode == "1":
+            self.topics = sorted_topics
+
+        elif mode == "2":
+            self.topics = list(reversed(sorted_topics))
+
+        elif mode == "3":
+            mid = len(sorted_topics) // 2
+
+            left = sorted_topics[:mid]
+            right = sorted_topics[mid:]
+
+            left = list(reversed(left)) 
+
+            merged = []
+            for l, r in zip(left, right):
+                merged.append(l)
+                merged.append(r)
+
+            if len(left) > len(right):
+                merged.extend(left[len(right):])
+            elif len(right) > len(left):
+                merged.extend(right[len(left):])
+
+            self.topics = merged
+
+        else:
+            print("Invalid mode.")
+            return
+
+        print(f"\nSorted by {attribute} (mode {mode}):")
+        for topic in self.topics:
+            print(f"- {topic}")
