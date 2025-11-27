@@ -49,6 +49,8 @@ def main():
 
         elif choice == "6":
             plan.save()
+            print("Goodbye")
+            break
 
         else:
             print("Invalid choice try again!")

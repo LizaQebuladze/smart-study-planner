@@ -38,3 +38,5 @@ class Topic:
             past_scores = data.get("past_scores", []),
             predicted_difficulty = data.get("predicted_difficulty")
         )
+    
+
