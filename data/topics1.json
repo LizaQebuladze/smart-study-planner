@@ -4,7 +4,10 @@
     "duration": 120,
     "priority": 2,
     "category": "Algorithms",
-    "past_scores": [91, 93],
+    "past_scores": [
+      91,
+      93
+    ],
     "predicted_difficulty": 8.986000000000002
   },
   {
@@ -12,7 +15,10 @@
     "duration": 90,
     "priority": 2,
     "category": "Programming",
-    "past_scores": [95, 97],
+    "past_scores": [
+      95,
+      97
+    ],
     "predicted_difficulty": 8.444999999999999
   },
   {
@@ -20,7 +26,10 @@
     "duration": 180,
     "priority": 1,
     "category": "Data",
-    "past_scores": [85, 87],
+    "past_scores": [
+      85,
+      87
+    ],
     "predicted_difficulty": 9.626999999999997
   },
   {
@@ -28,7 +37,11 @@
     "duration": 150,
     "priority": 6,
     "category": "Math",
-    "past_scores": [78, 82, 80],
+    "past_scores": [
+      78,
+      82,
+      80
+    ],
     "predicted_difficulty": 7.65
   },
   {
@@ -36,7 +49,10 @@
     "duration": 120,
     "priority": 5,
     "category": "Math",
-    "past_scores": [88, 90],
+    "past_scores": [
+      88,
+      90
+    ],
     "predicted_difficulty": 7.92
   },
   {
@@ -44,23 +60,33 @@
     "duration": 60,
     "priority": 3,
     "category": "Programming",
-    "past_scores": [97, 99],
-    "predicted_difficulty": 6.20
+    "past_scores": [
+      97,
+      99
+    ],
+    "predicted_difficulty": 6.2
   },
   {
     "name": "Data Structures",
     "duration": 90,
     "priority": 3,
     "category": "Algorithms",
-    "past_scores": [80, 82, 78],
-    "predicted_difficulty": 8.40
+    "past_scores": [
+      80,
+      82,
+      78
+    ],
+    "predicted_difficulty": 8.4
   },
   {
     "name": "Discrete Math",
     "duration": 110,
     "priority": 7,
     "category": "Math",
-    "past_scores": [92, 90],
+    "past_scores": [
+      92,
+      90
+    ],
     "predicted_difficulty": 6.88
   },
   {
@@ -68,15 +94,21 @@
     "duration": 75,
     "priority": 4,
     "category": "Programming",
-    "past_scores": [89, 91],
-    "predicted_difficulty": 7.10
+    "past_scores": [
+      89,
+      91
+    ],
+    "predicted_difficulty": 7.1
   },
   {
     "name": "Machine Learning Intro",
     "duration": 180,
     "priority": 1,
     "category": "AI",
-    "past_scores": [85, 88],
+    "past_scores": [
+      85,
+      88
+    ],
     "predicted_difficulty": 9.87
   }
 ]
